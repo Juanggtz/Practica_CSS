@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&display=swap');
+
+:root{
+    --fuente: 'Montserrat', sans-serif;
+    --fuente-titulo: 'Lato', sans-serif;
+    --fuente-parrafo: 'Open Sans', sans-serif;
+    --color-titulo: #1f3e72;
+    --azul: #148ae3;
+    --color-boton: #f1f5ff;
+}
+
+html{
+    box-sizing: border-box;
+    width: min(90%);
+    margin: 0 auto;
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*----------------------------Encabezado------------------*/
+.encabezado{
+    display: flex;
+    background: linear-gradient(90deg, white 50%, rgba(232, 242, 252, 255) 52%);
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 130px;
+}
+
+.encabezado a{
+    font-family: var(--fuente);
+}
+
+.link-inicio {
+    display: grid;  
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 4rem;
+    padding-right: 50px;
+}
+
+.link-inicio a{
+    color: grey;
+    font-family: var(--fuente);
+    font-weight: bolder;
+}
+
+.inicio{
+    color: #3656d4;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.link-inicio a:hover{
+    color: #3656d4;
+}
+
+.boton-inicio{
+    font-size: 15px;
+    background-color: #3656d4;
+    color: white;
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+    border-radius: .5rem;
+}
+
+/*----------------Cabecera--------------*/
+
+.cabecera{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contenedor-1{
+    padding-left: 130px;
+    padding-top: 50px;
+}
+
+.etiqueta-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    gap: 20px;
+}
+
+.icons-1{
+    width: 10%;
+}
+
+.icons-2{
+    width: 5%;
+}
+
+.foto1{
+    background-color: var(--azul);
+    background-image: url(./nurse2.png);
+    height: 1000px;
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*-------------Banner-----------*/
+
+.banner{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding: 1rem;
+    box-shadow: 0px 10px 30px rgba(3, 19, 23, 0.25);
+    border-radius: 10px;
+    margin: -250px 1rem 1rem 150px;
+    background-color: white;
+    
+}
+
+.banner-ima{
+    width: 25px;
+}
+
+.boton-banner{
+    font-size: 15px;
+    background-color: #3656d4;
+    color: white;
+    border: 0px;
+    padding: 15px 25px 15px 25px;
+    border-radius: .5rem;
+}
+
+.boton-banner a{
+    font-family: var(--fuente);
+    font-weight: bolder;
+    color: white;
+}
+
+/*------------------marcas---------------*/
+
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.aztra{
+    width: 15rem;
+}
+
+.sinovac{
+    width: 15rem;
+}
+
+.pfizer{
+    width: 15rem;
+}
+
+.moderna{
+    width: 15rem;
+}
+
+/*-------------Tarjeta----------*/
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.ima-tarjeta{
+    padding: 50px 50px 0px 50px;
+}
+
+.tarjeta{
+    box-shadow: 0px 5px 15px rgba(3, 19, 23, 0.25);
+    border-radius: 10px;
+}
+
+.tarjeta-titulo{
+    font-size: 20px;
+    padding: 10px 50px 20px 50px;
+    color: black;
+}
+
+.tarjeta-parrafo{
+    padding: 0px 50px 50px 50px;
+}
+
+/*-----------------2 parte de pagina-----------*/
+.foto2{
+    background-image: url(./paciente.PNG);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 50px;
+}
+
+.preparacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 250px;
+}
+
+.boton-preparacion{
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    gap: 20px;
+}
+
+.boton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+    border: 0px;
+}
+
+
+.text-boton{
+    text-decoration: none;
+    font-family: var(--fuente-parrafo);
+    color: grey;
+    font-size: 15px;
+}
+
+.text-boton:hover{
+    color: white;
+}
+
+.boton:hover{
+    background-color: var(--azul);
+}
+
+/*---------------mergency contacto-------------*/
+
+.emergency{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+
+.texto-emergency{
+    padding-bottom: 80px;
+}
+
+.foto3{
+    background-image: url(./male-nurse.PNG);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 3rem;
+}
+
+.contact{
+    box-shadow: 0px 5px 15px rgba(3, 19, 23, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    height: 180px;
+}
+
+.comlumn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+}
+
+.icon-cont{
+    display: flex;
+    padding: 30px 0px 30px 80px;
+    height: 50px;
+
+}
+
+.text-contacto{
+    padding-right: 50px;
+}
+
+.text-contacto h2{
+    font-family: var(--fuente-parrafo);
+    color:#343942;
+    font-size: 20px;
+}
+
+
+.text-contacto h3{
+    font-family: var(--fuente-parrafo);
+    color:gray;
+    font-size: 10px;   
+}
+
+.contact button{
+    background-color: var(--color-boton);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+    border: 0px;
+    padding: 10px 50px 10px 50px;
+
+}
+
+.contact button:hover{
+    background-color: #3656d4;
+   
+}
+
+.contact button a:hover{
+    color: var(--color-boton);
+}
+
+.contact button a{
+    font-family: var(--fuente-parrafo);
+    color: #3656d4;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+h1{
+    font-family: var(--fuente-titulo);
+    color: var(--color-titulo);
+    font-size: 60px;
+
+}
+
+p{
+    font-family: var(--fuente-parrafo);
+    font-weight: bolder;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.banner-titulo{
+    font-weight:500;
+}
+
+.banner-res{
+    color: black;
+    padding-left: 35px;
+}
+
+.calendar{
+    font-size: 25px;
+    color: black;
+}
+
+/*----------------Pie de página-------------*/
+footer{
+    background-color: var(--color-boton);
+    padding-top: 80px;
+    
+}
+
+.contenedor-pie1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datos-adicionales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-right: 100px;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.objetivo{
+    padding-left: 100px;
+    width: 200px;
+}
+
+.objetivo h1{
+    font-family: var(--fuente-titulo);
+    font-size: 25px;
+    color: #3656d4;
+}
+
+
+.datos h2{
+    font-family: var(--fuente-titulo);
+    color: #343942;
+}
+
+.datos p{
+    line-height: 50px;
+}
+
+.datos p a:hover{
+    color: #3656d4;
+}
+
+.datos p a{
+    font-family: var(--fuente-parrafo);
+    font-weight: bolder;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.contenedor-pie2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 20px 100px;
+}
+
+.contenedor-pie2 h3{
+    font-family: var(--fuente-parrafo);
+    font-weight: bolder;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: gray;
+}
